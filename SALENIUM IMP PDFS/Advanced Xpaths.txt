@@ -1,0 +1,108 @@
+//*[@id="TXTUsername"] ---> Relative Xpath
+/html/body/div[1]/div/div[3]/div[2]/div[2]/form/div[2]/input ---> Absolute Xpath
+
+------------------------------------------------------------------
+
+And / Or operators
+<input type="submit" name="Submit" class="button" id="btnLogin" value="LOGIN"
+<input type="submit" name="Submit" class="button" id="btnLogin" value="RESET" 
+
+
+//input[@type='submit'and @value='LOGIN']
+//input[@type='submit'OR @value='LOGIN'] --->
+
+-----------------------------------------------------------------------------
+Text()
+
+<input name="txtUsername" id="txtUsername" type="text">
+"//b[text()='Admin']"
+//b[text()='Admin']
+
+//a[text()='Nationalities']
+
+-------------------------------------------------------------------------------
+
+Contains
+
+Inbox26
+//*[contains(text(),'Inbox')]"  ----> Partial link text
+
+------------------------------------------------------------------------------
+Starts With Text()
+
+MyInbox 
+Inbox
+
+//*[Starts-with(text(),'MyInbox')]
+
+
+-----------------------------------------------------------------------------
+
+If the values are dynamically changing we can use 
+
+1) Contains text()
+2) Starts-with text()
+3) Partial link text
+
+--------------------------------------------------------------------------------
+
+Following
+
+//*[@id='txtUsername'] --- Current Webelement
+
+//*[@id='txtUsername']//following::input
+
+
+--------------------------------------------------------------------------------
+Ancestors
+
+//*[@id='txtUsername']
+
+//*[@id='txtUsername']//ancestor::div[1]
+
+//a[@id='menu_admin_viewAdminModule']//ancestor::div[1]
+
+-------------------------------------------------------------------------------
+Preceeding
+
+//*[@id='btnLogin']---> Current Xpath
+
+//*[@id='btnLogin']//preceding::input
+
+//*[@id='txtUsername']//preceding::input
+
+----------------------------------------------------------------------------------
+
+1) Absolute Xpath
+2) Relative Xpath
+3) And / Or operators
+4) Text()
+5) Contains text ()
+6) Start -with text ()
+7) Following
+8) Preceding
+9) Ancestors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
